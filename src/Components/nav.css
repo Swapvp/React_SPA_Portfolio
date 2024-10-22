@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 80px;
+    box-shadow: 2px 2px 8px #000;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 800;
+    font-size: 20px;
+    color: #d92cf9;
+    margin: 0;
+
+}
+
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    
+}
+
+.nav-menu a:hover{
+    color: #d92cf9;
+}

@@ -1,0 +1,39 @@
+.timeline span {
+    height: 2px;
+    background-color: #b2c1ce;
+    width: 100%;
+    display: inline-block;
+}
+
+.timeline  {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.eduYear {
+    font-size: 18px;
+    font-weight: 400;
+    color: #43485c;
+    text-transform: capitalize;
+
+}
+
+.eduDegree, .eduLoc {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 300;
+    color: #636a82;
+    margin-top: 14px;
+}
+
+.eduLoc {
+    font-size: 18px;
+}
+
+.edudesc {
+    color: #636a82;
+    font-size: 18px;
+
+
+}
