@@ -1,6 +1,6 @@
 .skill-label {
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
     color: #666;
     margin-bottom: 5px;
   }
@@ -12,12 +12,12 @@
   }
   
   .bg-purple {
-    background-color: #d633ff;
+    background-color: #b636ff;
   }
   
   .progress-value {
-    font-weight: bold;
-    color: #d633ff;
+    font-weight: 600;
+    color: #b636ff;
     font-size: 16px;
   }
   

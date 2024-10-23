@@ -3,14 +3,14 @@ import { useState } from "react";
 import "./Skills.css";
 
 const skills = [
-  { label: "Adobe Photoshop", value: 90 },
-  { label: "Adobe Illustrator", value: 85 },
-  { label: "Adobe After Effects", value: 97 },
-  { label: "Sketch", value: 90 },
+  { label: "React", value: 90 },
+  { label: "Next.JS", value: 85 },
+  { label: "Tailwind/Bootstrap", value: 97 },
+  { label: "Node JS", value: 90 },
   { label: "HTML 5", value: 90 },
   { label: "CSS 3 Animation", value: 85 },
-  { label: "Communication", value: 97 },
-  { label: "Creativity", value: 90 },
+  { label: "JavaScript", value: 97 },
+  { label: "PHP", value: 90 },
 ];
 
 const Skills = () => {
@@ -19,8 +19,8 @@ const Skills = () => {
   const renderProgressBar = ({ label, value }, index) => (
     <div key={index} className="d-flex align-items-center mb-4">
       <div className="w-50">
-        <h6 className="skill-label">{label}</h6>
-        <div className="progress" style={{ height: "10px" }}>
+        <h6 className="skill-label my-3">{label}</h6>
+        <div className="progress" style={{ height: "7px", width: "550px" }}>
           <div
             className="progress-bar bg-purple"
             role="progressbar"
@@ -39,7 +39,7 @@ const Skills = () => {
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Skills</h2>
       </div>
-      <div className="container">
+      <div className="container my-5">
         <div className="row">
           <div className="col-md-6">
             {skills.slice(0, 4).map(renderProgressBar)}
