@@ -15,3 +15,21 @@
 .gray {
     background-color: #f9fbfd;
 }
+
+.iCSS svg {
+    font-size: 50px;
+}
+
+.iCSS {
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+.profile-no-border {
+    border-right: transparent;
+
+}
+
+.noBootom {
+    border-bottom: transparent;
+}
