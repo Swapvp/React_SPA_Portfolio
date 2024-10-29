@@ -1,0 +1,20 @@
+form input, textarea {
+    border: none;
+    background: #dfdfdf9c;
+    padding: 15px;
+    margin: 5px 0;
+}
+
+input[type="submit"]{
+    background-color: hsl(291, 94%, 57%);
+    color: #fff;
+}
+
+input[type="submit"]:hover{
+    background-color: hsl(291, 94%, 47%)
+
+}
+
+.contactInfo div{
+    padding: 10px 0;
+}

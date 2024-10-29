@@ -12,12 +12,12 @@
   }
   
   .bg-purple {
-    background-color: #b636ff;
+    background-color: hsl(291, 94%, 57%);
   }
   
   .progress-value {
     font-weight: 600;
-    color: #b636ff;
+    color: hsl(291, 94%, 57%);
     font-size: 16px;
   }
   
