@@ -1,43 +1,133 @@
-*{
+/* General Styles */
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-nav {
+  }
+  
+  nav {
     height: 80px;
     box-shadow: 2px 2px 8px #000;
     display: flex;
     align-items: center;
-}
-
-.logo{
+    background-color: #fff;
+    padding: 0 20px;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
     font-weight: 800;
     font-size: 20px;
     color: #d92cf9;
-    margin: 0;
-
-}
-
-.nav-menu ul {
-    display: flex;
-    gap: 20px;
+  }
+  
+  .menuBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6f6f6f;
+    transition: color 0.3s ease;
+  }
+  
+  .menuBtn:hover {
+    color: #d92cf9;
+  }
+  
+  /* Slide-Out Menu */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden */
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease-in-out;
+    padding-top: 20px;
+    z-index: 1000;
+  }
+  
+  .nav-menu.open {
+    right: 0;
+  }
+  
+  /* Close Button */
+  .closeBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6f6f6f;
+    transition: color 0.3s ease;
+  }
+  
+  .closeBtn:hover {
+    color: #d92cf9;
+  }
+  
+  /* Navigation Items */
+  .nav-menu ul {
     list-style-type: none;
-    justify-content: space-around;
+    padding: 60px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
-    font-size: 16px;
-    font-weight: 500;
-    margin: 0;
-
-}
-
-.nav-menu a {
+  }
+  
+  .nav-menu a {
     text-decoration: none;
     color: #6f6f6f;
     text-transform: uppercase;
-    
-}
-
-.nav-menu a:hover{
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .nav-menu a:hover {
     color: #d92cf9;
-}
+  }
+  
+  /* Desktop View */
+  @media (min-width: 768px) {
+    .nav-menu {
+      position: static;
+      height: auto;
+      width: auto;
+      box-shadow: none;
+      background-color: transparent;
+      display: flex;
+    }
+  
+    .nav-menu ul {
+      flex-direction: row;
+      gap: 20px;
+    }
+  
+    .menuBtn {
+      display: none; /* Hide Hamburger Icon on Desktop */
+    }
+  
+    .closeBtn {
+      display: none; /* Hide Close Button on Desktop */
+    }
+  
+    /* Align Menu to the Right */
+    .container {
+      justify-content: space-between;
+    }
+  
+    .nav-menu {
+      margin-left: auto;
+    }
+  }
+  

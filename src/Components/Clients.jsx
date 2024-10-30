@@ -6,6 +6,7 @@ import c4 from "../assets/clients/c4.png";
 import c5 from "../assets/clients/c5.png";
 import c6 from "../assets/clients/c6.png";
 import c7 from "../assets/clients/c7.png";
+import styles from "./Clients.module.css";
 
 const Clients = () => {
   return (
@@ -15,7 +16,7 @@ const Clients = () => {
       </div>
       <div className="container">
         <div className="row text-center  my-5  ">
-          <div className="d-flex justify-content-between align-items-center">
+          <div className={styles.clientLogos}>
             <img src={c1} alt="" />
             <img src={c2} alt="" />
             <img src={c3} alt="" />

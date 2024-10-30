@@ -20,7 +20,7 @@ const Skills = () => {
     <div key={index} className="d-flex align-items-center mb-4">
       <div className="w-50">
         <h6 className="skill-label my-3">{label}</h6>
-        <div className="progress" style={{ height: "7px", width: "550px" }}>
+        <div className="progress progressBox">
           <div
             className="progress-bar bg-purple"
             role="progressbar"
