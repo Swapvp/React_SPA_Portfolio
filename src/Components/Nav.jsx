@@ -57,9 +57,9 @@ const Nav = () => {
             <a href="#skills" onClick={toggleMenu}>
               <li>skills</li>
             </a>
-            <a href="#experience" onClick={toggleMenu}>
+            {/* <a href="#experience" onClick={toggleMenu}>
               <li>experience</li>
-            </a>
+            </a> */}
             <a href="#profiles" onClick={toggleMenu}>
               <li>profiles</li>
             </a>
