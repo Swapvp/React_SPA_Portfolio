@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
     
   }
 
@@ -51,10 +52,16 @@ html {
 }
 
 
+
+
 @media screen and (max-width: 720px) { 
 
     .iCSS {
         border: none;
         justify-content: center;
+    }
+
+    .Mobwidth {
+        width: 300px;
     }
 }

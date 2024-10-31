@@ -15,23 +15,23 @@ const Portfolio = () => {
         <div className="row justify-content-center text-center">
           <div className="col-md-4 text-center">
             <div>
-              <img src={p1} alt="" />
+              <img src={p1} alt="" className="Mobwidth" />
             </div>
             <div className="my-4">
-              <img src={p2} alt="" />
+              <img src={p2} alt="" className="Mobwidth" />
             </div>
           </div>
           <div className="col-md-4 text-center">
             <div>
-              <img src={p3} alt="" />
+              <img src={p3} alt="" className="Mobwidth" />
             </div>
           </div>
           <div className="col-md-4 text-center">
             <div>
-              <img src={p4} alt="" />
+              <img src={p4} alt="" className="Mobwidth" />
             </div>
             <div className="my-4">
-              <img src={p5} alt="" />
+              <img src={p5} alt="" className="Mobwidth" />
             </div>
           </div>
         </div>
