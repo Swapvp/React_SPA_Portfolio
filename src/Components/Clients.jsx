@@ -10,7 +10,7 @@ import styles from "./Clients.module.css";
 
 const Clients = () => {
   return (
-    <section className="padding">
+    <section className="padding" id="clients">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Clients</h2>
       </div>

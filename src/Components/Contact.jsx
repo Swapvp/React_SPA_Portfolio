@@ -3,7 +3,7 @@ import styles from "./Contact.module.css";
 
 const Contact = () => {
   return (
-    <section className="padding gray">
+    <section className="padding gray" id="contact">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Contact</h2>
       </div>

@@ -1,133 +1,163 @@
 /* General Styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 80px;
+  box-shadow: 2px 2px 8px #000;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: white;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  color: #d92cf9;
+  margin-bottom: 0;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 4.5rem;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #6f6f6f;
+  text-transform: uppercase;
+}
+
+.nav-menu a:hover {
+  color: #d92cf9;
+}
+
+.menuBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  color: #6f6f6f;
+  cursor: pointer;
   
-  nav {
-    height: 80px;
-    box-shadow: 2px 2px 8px #000;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 0 20px;
-  }
-  
+}
+
+
+
+/* Slide-out menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  transform: translateX(100%); /* Start hidden off-screen */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.mobile-menu.open {
+  transform: translateX(0); /* Slide in when open */
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  color: #6f6f6f;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
   .container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
   }
-  
-  .logo {
-    font-weight: 800;
-    font-size: 20px;
-    color: #d92cf9;
-  }
-  
-  .menuBtn {
-    border: none;
-    background-color: transparent;
-    font-size: 28px;
-    cursor: pointer;
-    color: #6f6f6f;
-    transition: color 0.3s ease;
-  }
-  
-  .menuBtn:hover {
-    color: #d92cf9;
-  }
-  
-  /* Slide-Out Menu */
-  .nav-menu {
+
+  .mobile-menu {
     position: fixed;
     top: 0;
-    right: -100%; /* Initially hidden */
-    height: 100vh;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
-    transition: right 0.3s ease-in-out;
-    padding-top: 20px;
-    z-index: 1000;
-  }
-  
-  .nav-menu.open {
     right: 0;
-  }
-  
-  /* Close Button */
-  .closeBtn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border: none;
-    background-color: transparent;
-    font-size: 28px;
-    cursor: pointer;
-    color: #6f6f6f;
-    transition: color 0.3s ease;
-  }
-  
-  .closeBtn:hover {
-    color: #d92cf9;
-  }
-  
-  /* Navigation Items */
-  .nav-menu ul {
-    list-style-type: none;
-    padding: 60px 0 0 0;
+    width: 70%;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
-    gap: 20px;
     align-items: center;
+    z-index: 1000;
   }
-  
-  .nav-menu a {
+
+  .mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mobile-menu a {
+    display: block;
     text-decoration: none;
     color: #6f6f6f;
-    text-transform: uppercase;
     font-size: 18px;
-    font-weight: 500;
+    padding: 15px 0;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
   }
-  
-  .nav-menu a:hover {
+
+  .mobile-menu a:hover {
     color: #d92cf9;
   }
-  
-  /* Desktop View */
-  @media (min-width: 768px) {
-    .nav-menu {
-      position: static;
-      height: auto;
-      width: auto;
-      box-shadow: none;
-      background-color: transparent;
-      display: flex;
-    }
-  
-    .nav-menu ul {
-      flex-direction: row;
-      gap: 20px;
-    }
-  
-    .menuBtn {
-      display: none; /* Hide Hamburger Icon on Desktop */
-    }
-  
-    .closeBtn {
-      display: none; /* Hide Close Button on Desktop */
-    }
-  
-    /* Align Menu to the Right */
-    .container {
-      justify-content: space-between;
-    }
-  
-    .nav-menu {
-      margin-left: auto;
-    }
+
+  .closeBtn {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    color: #6f6f6f;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
   }
-  
+  .row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .col-md-3,
+  .d-sm-block {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .col-md-3 .logo {
+    margin-left: 0;
+  }
+}

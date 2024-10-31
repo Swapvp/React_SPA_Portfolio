@@ -9,14 +9,16 @@ import {
   AiFillAndroid,
   AiFillApi,
 } from "react-icons/ai";
+
+import styles from "./Profiles.module.css";
 const Profiles = () => {
   return (
-    <section className="padding">
+    <section className="padding" id="profiles">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Profiles</h2>
       </div>
       <div className="container">
-        <div className="row text-center my-5">
+        <div className={`row text-center my-5 ${styles.mobBorder}`}>
           <div className="col-md-3 p-5 iCSS">
             <LiaThemeco />
             <p className="my-3">LiaThemeco</p>

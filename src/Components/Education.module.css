@@ -37,3 +37,9 @@
 
 
 }
+@media (max-width: 768px) {
+.MobPadding {
+    padding: 30px 20px;
+
+}
+}

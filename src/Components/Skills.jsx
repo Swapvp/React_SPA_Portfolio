@@ -35,7 +35,7 @@ const Skills = () => {
     </div>
   );
   return (
-    <section className="padding">
+    <section className="padding" id="skills">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Skills</h2>
       </div>

@@ -4,11 +4,11 @@ import styles from "./Education.module.css";
 
 const Education = () => {
   return (
-    <section className="padding gray">
+    <section className="padding gray" id="education">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Education</h2>
       </div>
-      <div className="container padding">
+      <div className={`container padding ${styles.MobPadding}`}>
         <div className="row ">
           <div className="col-md-4">
             <div>

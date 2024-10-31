@@ -6,10 +6,17 @@
 
 @media screen and (max-width: 720px) {
     .clientLogos {
-    flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .clientLogos img {
+        display: flex;
         margin: 10px 0;
+        padding: 20px;
+        width: 150px;
+    
     }
+
+
 }
