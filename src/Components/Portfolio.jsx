@@ -7,7 +7,7 @@ import p5 from "../assets/portfolio/p5.jpg";
 
 const Portfolio = () => {
   return (
-    <section className="padding">
+    <section className="padding gray">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Portfolio</h2>
       </div>
