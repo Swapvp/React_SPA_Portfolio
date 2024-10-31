@@ -46,7 +46,7 @@ const Experience = () => {
   ];
 
   return (
-    <section className={`padding d-none d-md-block`} id="profiles">
+    <section className={`padding d-none d-md-block`} id="experience">
       <div className="secTitle">
         <h2 className="text-center text-uppercase">Experience</h2>
       </div>
