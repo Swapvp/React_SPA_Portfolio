@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className="py-3">
       <p className="text-center">
-        © copyright swapnesh pawar. all rights reserved
+        © copyright 2024 swapnesh pawar. all rights reserved
       </p>
     </section>
   );

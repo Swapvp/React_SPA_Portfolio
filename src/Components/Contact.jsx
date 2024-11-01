@@ -17,7 +17,7 @@ const Contact = () => {
       return;
     }
     // Submit form logic
-    console.log("Form submitted with captcha:", captchaValue);
+    // console.log("Form submitted with captcha:", captchaValue);
   };
 
   return (
@@ -69,7 +69,7 @@ const Contact = () => {
               </div>
               <div className="my-2">
                 <ReCAPTCHA
-                  sitekey="6LfKPnIqAAAAABhxLAkrCosq5dI1s6b-zNhG9Akq" // Replace with your actual site key
+                  sitekey="6LfKPnIqAAAAABhxLAkrCosq5dI1s6b-zNhG9Akq" 
                   onChange={onCaptchaChange}
                 />
               </div>
