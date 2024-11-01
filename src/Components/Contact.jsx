@@ -1,7 +1,25 @@
 import React from "react";
+import { useState } from "react";
 import styles from "./Contact.module.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+  const [captchaValue, setCaptchaValue] = useState(null);
+
+  const onCaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!captchaValue) {
+      alert("Please complete the reCAPTCHA");
+      return;
+    }
+    // Submit form logic
+    console.log("Form submitted with captcha:", captchaValue);
+  };
+
   return (
     <section className="padding gray" id="contact">
       <div className="secTitle">
@@ -48,6 +66,12 @@ const Contact = () => {
                   rows="4"
                   cols="50"
                 ></textarea>
+              </div>
+              <div className="my-2">
+                <ReCAPTCHA
+                  sitekey="6LfKPnIqAAAAABhxLAkrCosq5dI1s6b-zNhG9Akq" // Replace with your actual site key
+                  onChange={onCaptchaChange}
+                />
               </div>
               <div className="my-2">
                 <input type="submit" value="SUBMIT" className="w-100" />
