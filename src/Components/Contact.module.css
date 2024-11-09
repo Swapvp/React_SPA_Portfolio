@@ -18,3 +18,9 @@ input[type="submit"]:hover{
 .contactInfo div{
     padding: 10px 0;
 }
+
+.contactErrors {
+    font-size: 14px;
+    color: red;
+    text-align: center;
+}
